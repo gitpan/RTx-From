@@ -1,5 +1,5 @@
 package RTx::From;
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 1;
 
@@ -27,6 +27,19 @@ combined with other search terms. The results of doing so are undefined
 and unsupported. However, you may supply multiple C<from:> terms, which
 will be OR'd together.
 
+There is also a work-around if you wish perform a complex query for
+tickets from a fuzzily-remembered reqiestor:
+
+=over
+
+=item * Search with C<from:>
+
+=item * Select "Requested" for the desired user
+
+=item * "Edit Search"
+
+=back
+
 =item Adds a brief description of the operator, and a link to the native
 user search on F<Search/Simple.html>.
 
@@ -53,20 +66,6 @@ Jerrad Pierce <jpierce@cpan.org>
 Except F<Admin/Users/from.html> which is derived from GPL work by
 Best Practical. But really, you can consider the above to be
 "the same terms as perl itself."
-
-=back
-
-=head1 SEE ALSO
-
-=head1 TODO
-
-=over
-
-=item Fuzzy matching
-
-=item Include ticket count in result table?
-
-=item Search on more fields?
 
 =back
 
