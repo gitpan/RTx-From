@@ -3,7 +3,7 @@ MANIFEST
 Makefile.PL
 README
 TODO
-html/Admin/Users/from.html
+html/Admin/Users/From.html
 html/Callbacks/RTx-From/Admin/Elements/UserTabs/Default
 html/Callbacks/RTx-From/Search/Simple.html/PreForm
 html/Callbacks/RTx-From/Search/Simple.html/SearchArgs

@@ -1,5 +1,5 @@
 package RTx::From;
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 1;
 
@@ -27,8 +27,8 @@ combined with other search terms. The results of doing so are undefined
 and unsupported. However, you may supply multiple C<from:> terms, which
 will be OR'd together.
 
-There is also a work-around if you wish perform a complex query for
-tickets from a fuzzily-remembered reqiestor:
+There is also a work-around if you wish to perform a complex query for
+tickets from a fuzzily-remembered requestor:
 
 =over
 
@@ -45,11 +45,19 @@ user search on F<Search/Simple.html>.
 
 =item Adds a sub-tab on a user's profile to a query for his tickets.
 
+=item Lastly, if RTx::BecomeUser is loaded and accessible by the current user,
+the search results stemming from a C<from:> search will include links to
+convenience links to become ach of the matching users.
+
 =back
 
 =head1 AUTHOR
 
 Jerrad Pierce <jpierce@cpan.org>
+
+=head1 SEE ALSO
+
+L<RTx::BecomeUser>
 
 =head1 LICENSE
 

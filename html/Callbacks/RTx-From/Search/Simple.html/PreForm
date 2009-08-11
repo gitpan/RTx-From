@@ -1,1 +1,1 @@
-<p>You may use the <b>from:<em>phrase</em></b> operator to search for users with usernames or real names like the supplied term. Otherwise try <a href="/Admin/Users/index.html">search users</a>.</p>
+<p>Search for users by partial name or address with <b>from:<em>string</em></b>, or <a href="/Admin/Users/index.html">Select a user</a>.</p>

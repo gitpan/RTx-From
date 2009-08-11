@@ -122,6 +122,10 @@ $Format ||=
     .q{,__RealName__, __EmailAddress__}
     .q{,'<a href="__WebPath__/Search/Results.html?Query=Requestor.id%3D__id__">Requested</a>/TITLE:Tickets'};
 
+if( $RTx::BecomeUser::VERSION &&
+    $session{'CurrentUser'}->HasRight(Right => 'SuperUser', Object=>$RT::System) ){   
+    $Format .= q{,'<a href="__WebPath__/Admin/Tools/BecomeUser.html?User=__id__">Impersonate</a>/TITLE:BecomeUser'};
+}
 </%INIT>
 <%ARGS>
 $Format => undef,
